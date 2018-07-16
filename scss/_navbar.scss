@@ -21,6 +21,11 @@
       color: darken($primary, 10%);
     }
   }
+  .navbar-brand img {
+    display: block;
+    height: 3rem;
+    transition: transform linear 100ms;
+  }
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -53,6 +58,9 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s;
     }
+    .navbar-brand img {
+      transform: scale(1.2);
+    }
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -66,7 +74,10 @@
       background-color: $gray-900;
       .navbar-brand {
         font-size: 1.25em;
-        padding: 12px 0;
+        //padding: 12px 0;
+      }
+      .navbar-brand img {
+        transform: scale(1);
       }
     }
   }

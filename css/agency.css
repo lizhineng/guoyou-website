@@ -126,6 +126,12 @@ img::-moz-selection {
   color: #fec503;
 }
 
+#mainNav .navbar-brand img {
+  display: block;
+  height: 3rem;
+  transition: transform linear 100ms;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
@@ -155,6 +161,9 @@ img::-moz-selection {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+  #mainNav .navbar-brand img {
+    transform: scale(1.2);
+  }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
   }
@@ -165,7 +174,9 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
-    padding: 12px 0;
+  }
+  #mainNav.navbar-shrink .navbar-brand img {
+    transform: scale(1);
   }
 }
 
