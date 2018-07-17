@@ -2,10 +2,8 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+  background: url('../img/header-bg.jpg') no-repeat center center;
+  box-shadow: 0 0 10rem rgba(0,0,0,.9) inset;
   @include background-cover;
   .intro-text {
     padding-top: 150px;
@@ -46,5 +44,10 @@ header.masthead {
         @include heading-font;
       }
     }
+  }
+}
+@media(min-width:1200px) {
+  header.masthead {
+    box-shadow: 0 0 30rem rgba(0,0,0,.9) inset;
   }
 }
