@@ -1,28 +1,26 @@
-# [Start Bootstrap - Agency](https://startbootstrap.com/template-overviews/agency/)
+# Guoyou Official Landing Page
+
+The theme is proudly powered by [Agency](https://startbootstrap.com/template-overviews/agency/) by [Start Bootstrap](http://startbootstrap.com/).
 
 [Agency](https://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
 
 ## Preview
 
-[![Agency Preview](https://startbootstrap.com/assets/img/templates/agency.jpg)](https://blackrockdigital.github.io/startbootstrap-agency/)
+[![Theme Preview](https://user-images.githubusercontent.com/2339485/42865537-85fa429a-8a9c-11e8-8879-94b934eadd4c.png)](https://www.gygsd.com)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-agency/)**
+**[View Live Preview](https://www.gygsd.com)**
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-agency/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-agency.svg)](https://www.npmjs.com/package/startbootstrap-agency)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-agency.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-agency)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency?type=dev)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lizhineng/guoyou-website/blob/master/LICENSE)
+[![Build Status](https://api.travis-ci.org/lizhineng/guoyou-website.svg?branch=master)](https://travis-ci.org/lizhineng/guoyou-website)
 
 ## Download and Installation
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/agency/)
-* Install via npm: `npm i startbootstrap-agency`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-agency.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-agency)
+To begin using this template, follow the below steps to get started:
+* Clone the repo: `git@github.com:lizhineng/guoyou-website.git`
+* Install PHPMailer for contact form via [Composer](https://getcomposer.org) by `composer install`
+* Replace your own Google Analytics code in the bottom of index.html
 
 ## Usage
 
