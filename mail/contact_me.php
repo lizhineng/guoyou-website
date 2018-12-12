@@ -17,6 +17,10 @@ if(empty($_POST['name'])      ||
    return false;
    }
 
+// load environment variables
+$dotenv = new Dotenv\Dotenv(realpath(__DIR__.'/..'));
+$dotenv->load();
+
 // passing true enables exceptions
 $mail = new PHPMailer(true);
 
@@ -32,28 +36,33 @@ try {
     // 0 = off (for production use)
     // 1 = client messages
     // 2 = client and server messages
-    $mail->SMTPDebug = 0;
+    $mail->SMTPDebug = strtolower(getenv('APP_DEBUG')) == 'true';
     $mail->isSMTP();
     $mail->SMTPAuth = true;
 
     // Set the encryption system to use - ssl (deprecated) or tls
     $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->Port = getenv('MAIL_PORT') + 0;
 
     // Set the hostname of the mail server
-    $mail->Host = '';
+    $mail->Host = getenv('MAIL_HOST');
 
     // Username and password to use for SMTP authentication
-    $mail->Username = '';
-    $mail->Password = '';
+    $mail->Username = getenv('MAIL_USERNAME');
+    $mail->Password = getenv('MAIL_PASSWORD');
 
     /**  Recipients */
 
     // this is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-    $mail->setFrom('noreply@yourdomain.com');
+    $mail->setFrom(getenv('MAIL_FROM'));
     // add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-    $mail->addAddress('yourname@yourdomain.com');
+    $mail->addAddress(getenv('MAIL_TO'));
     $mail->addReplyTo($email_address);
+
+    // Send mail with CC if it's provided
+    if ($mail_cc = getenv('MAIL_CC')) {
+        $mail->addCC($mail_cc);
+    }
 
     /** Content */
     $mail->Subject = "Website Contact Form:  $name";
