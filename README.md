@@ -19,7 +19,8 @@ The theme is proudly powered by [Agency](https://startbootstrap.com/template-ove
 
 To begin using this template, follow the below steps to get started:
 * Clone the repo: `git@github.com:lizhineng/guoyou-website.git`
-* Install PHPMailer for contact form via [Composer](https://getcomposer.org) by `composer install`
+* Install PHP packages for contact form via [Composer](https://getcomposer.org) by `composer install`
+* Copy `.env.example` to `.env`, then edit configrations to suit your needs
 * Replace your own Google Analytics code in the bottom of index.html
 
 ## Usage
