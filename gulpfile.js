@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
+var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
@@ -87,6 +88,7 @@ gulp.task('js:minify', function() {
       './js/*.js',
       '!./js/*.min.js'
     ])
+    .pipe(babel())
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'

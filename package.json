@@ -32,8 +32,11 @@
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
+        "@babel/core": "7.3.3",
+        "babel-preset-env": "1.7.0",
         "browser-sync": "2.26.3",
         "gulp": "4.0.0",
+        "gulp-babel": "8.0.0",
         "gulp-clean-css": "4.0.0",
         "gulp-header": "2.0.5",
         "gulp-rename": "1.4.0",
